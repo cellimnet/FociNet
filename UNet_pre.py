@@ -32,7 +32,7 @@ import imagej
 ij = imagej.init('sc.fiji:fiji:2.0.0-pre-10')
 
 ### Choose image type
-image_type = 'pico'
+image_type = 'pe'
 
 ### Create folders
 drug_names = os.listdir(dir_back_floder)
@@ -198,18 +198,9 @@ def unet_pre(drug_name, sta):
             num_temp = 0
             sel_sizea = 0
             sel_sizeb = 80000
-            # if image_type == 'pe':
-            #     sel_sizea = 800
-            #     sel_sizeb = 8000
-            if image_type == 'pico':
-                sel_sizea = 2312
-                sel_sizeb = 23118
-            if image_type == 'leica':
-                sel_sizea = 166
-                sel_sizeb = 1662
-            if image_type == 'confocal':
-                sel_sizea = 871
-                sel_sizeb = 8708
+            if image_type == 'pe':
+                sel_sizea = 0
+                sel_sizeb = 80000
             for i in range(1, labelmax):
                 if np.sum(labels == i) > sel_sizea and np.sum(labels == i) < sel_sizeb:
                     im_1 = pre_img_seg.copy()
@@ -227,21 +218,6 @@ def unet_pre(drug_name, sta):
                     if image_type == 'pe':
                         shape_x = int(1 * shape_x)
                         shape_y = int(1 * shape_y)
-                        imgs[num_temp] = resize(imgs[num_temp], (shape_x, shape_y), mode='constant',
-                                             preserve_range=True)
-                    if image_type == 'pico':
-                        shape_x = int(0.59 * shape_x)
-                        shape_y = int(0.59 * shape_y)
-                        imgs[num_temp] = resize(imgs[num_temp], (shape_x, shape_y), mode='constant',
-                                                preserve_range=True)
-                    if image_type == 'leica':
-                        shape_x = int(2.19 * shape_x)
-                        shape_y = int(2.19 * shape_y)
-                        imgs[num_temp] = resize(imgs[num_temp], (shape_x, shape_y), mode='constant',
-                                             preserve_range=True)
-                    if image_type == 'confocal':
-                        shape_x = int(0.96 * shape_x)
-                        shape_y = int(0.96 * shape_y)
                         imgs[num_temp] = resize(imgs[num_temp], (shape_x, shape_y), mode='constant',
                                              preserve_range=True)
                     add_x = sta - shape_x
