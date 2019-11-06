@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# FociNet
-=======
 # FociNet-Pipeline-for-53BP1
 
 ## **Description**
@@ -45,5 +42,4 @@ After running was finished, you will totally get 4 csv files in "./save/".
 
 "cell_count.csv" provides information about the statistical results of each treatment. We recommend that 0 / (0+1) value is calculated to evaluate and compare the DNA damage of different treatment.
 
-We have an example dataset. It includes 9 full-field images. The run time is about 3 minutes.
->>>>>>> commit
+We have an example dataset. It includes 9 full-field images. The run time is about 3 minute
