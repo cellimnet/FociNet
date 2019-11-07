@@ -28,7 +28,7 @@ pip install jnius
 
 ## **How to use**
 
-Firstly, you should unzip "VGG.zip" and put "VGG.h5" into folder "./asset/".
+Firstly, unzip "VGG.zip" and put "VGG.h5" into the "./asset/" folder.
 
 **Input**
 
@@ -66,3 +66,11 @@ Run the UNet-VGG.py file. After running was finished, you will totally get 4 csv
 **Example dataset**
 
 We have an example dataset. It includes 9 full-field images. The run time is about 3 minutes.
+
+## **Declaration**
+
+The architecture of U-Net is on the basis of https://www.kaggle.com/keegil/keras-u-net-starter-lb-0-277/notebook?scriptVersionId=2164855/notebook.
+
+Training of U-Net uses previously published datasets. These datasets are available at https://github.com/kamalkraj/DATA-SCIENCE-BOWL-2018
+and https://data.broadinstitute.org/bbbc/BBBC039/,
+respectively.
