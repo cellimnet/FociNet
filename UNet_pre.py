@@ -35,6 +35,8 @@ ij = imagej.init('sc.fiji:fiji:2.0.0-pre-10')
 image_type = 'pe'
 
 ### Create folders
+if not os.path.exists('./save/'):
+    os.mkdir('./save/')
 drug_names = os.listdir(dir_back_floder)
 folder_names = [dir_deenv_floder, dir_mask_floder, dir_maskdeenv_floder, dir_maskprocess_floder, dir_single_floder, dir_single_ec_floder]
 for folder_name in folder_names:
