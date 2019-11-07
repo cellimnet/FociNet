@@ -28,6 +28,8 @@ pip install jnius
 
 ## **How to use**
 
+Firstly, you should unzip "VGG.zip" and put "VGG.h5" into folder "./asset/".
+
 **Input**
 
 Put your images into corresponding folders before running UNet-VGG.py file. 8-bit TIF format is recommended. Put the nuclei-channel images into "./input/back/", and the foci-channel images into "./input/pre/". Images of the same site should have the same file name. If you have various treatments to analyze and compare, please put images of one treatment into one subfolder like the example dataset. Even if you have only one treatment, please also build a subfolder for it. 
