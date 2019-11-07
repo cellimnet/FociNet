@@ -14,7 +14,7 @@ Hardware: >= 8G memory, equipped with a CPU with Core i5 or above.
 
 Environment: Python --3.6.5
 
-This project uses Numpy, Opencv, skimage, tqdm, tensorflow,pyimagej,jnius. Go check them out if you don't have them, you can install them with conda or pip. It will take less than 10 minutes to install them. 
+This project uses Numpy, Opencv, skimage, tqdm, tensorflow, pyimagej, jnius. Go check them out if you don't have them, you can install them with conda or pip. 
 
 ```python
 conda install numpy
