@@ -12,7 +12,7 @@ Programing language: Python.
 
 Hardware: >= 8G memory, equipped with a CPU with Core i5 or above.
 
-Environment: Python --3.6.5
+Environment: Python --3.6.5，CUDA --9.1.83， GPU：Nvidia 1080
 
 This project uses Numpy, Opencv, skimage, tqdm, tensorflow, pyimagej. Go check them out if you don't have them, you can install them with conda or pip. 
 
