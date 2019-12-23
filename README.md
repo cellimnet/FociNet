@@ -17,11 +17,11 @@ Environment: Python --3.6.5
 This project uses Numpy, Opencv, skimage, tqdm, tensorflow, pyimagej. Go check them out if you don't have them, you can install them with conda or pip. 
 
 ```python
-pip install numpy
+pip install numpy==1.17.4
 pip install opencv-python
-pip install scikit-image
+pip install scikit-image==0.16.2
 pip install tqdm
-pip install tensorflow
+pip install tensorflow-gpu==1.12.0
 conda install pyimagej
 ```
 
